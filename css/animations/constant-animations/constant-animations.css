@@ -211,10 +211,10 @@
 
 /* Постоянная тряска элемента (x, y) */
 .infinity-shake {
-  animation: infinityShake 0.5s ease infinite;
+  animation: infinity-shake 0.5s ease infinite;
 }
 
-@keyframes infinityShake {
+@keyframes infinity-shake {
   0% {
     transform: translate(0, 0);
   }

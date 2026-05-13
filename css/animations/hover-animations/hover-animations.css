@@ -1,27 +1,27 @@
 /* Изменение размера элемента при наведении курсора */
-.hoverScaleSmallAnimation {
+.hover-scale-small-animation {
   transition: transform 0.5s ease;
   transform: scale(1);
 }
-.hoverScaleSmallAnimation:hover {
+.hover-scale-small-animation:hover {
   transform: scale(0.9);
 }
 
-.hoverScaleBigAnimation {
+.hover-scale-big-animation {
   transition: transform 0.5s ease;
   transform: scale(1);
 }
-.hoverScaleBigAnimation:hover {
+.hover-scale-big-animation:hover {
   transform: scale(1.1);
 }
 
 /* Пульсирование элемента при наведении курсора */
 
-.hoverPulseAnimation {
+.hover-pulse-animation {
   transition: transform 0.5s ease-in-out;
   transform: scale(1);
 }
-.hoverPulseAnimation:hover {
+.hover-pulse-animation:hover {
   animation: hoverPulseAnimation 1s ease-in-out infinite;
 }
 @keyframes hoverPulseAnimation{
@@ -31,7 +31,7 @@
 }
 
 /* Появление тени у элемента при наведении */
-.hoverShadowAnimation:hover {
+.hover-shadow-animation:hover {
   animation: hoverShadowAddAnimation 1s ease-in-out forwards;
 }
 @keyframes hoverShadowAddAnimation{
@@ -43,220 +43,220 @@
 
 /* Прокрутка элемента на 360° при наведении */
 /* Базовый переход для плавного поворота в обе стороны */
-.hoverRotateAnimation {
+.hover-rotate-animation {
   transition: transform 0.6s ease-in-out;
 }
 /* При наведении поворачиваем на 360° */
-.hoverRotateAnimation:hover {
+.hover-rotate-animation:hover {
   transform: rotate(360deg);
   transition: transform 0.9s ease-in-out; /* скорость поворота при наведении */
 }
 /* Обратно */
-.hoverRotateAnimationReverse {
+.hover-rotate-animation-reverse {
   transition: transform 0.6s ease-in-out;
 }
 /* При наведении поворачиваем на 360° */
-.hoverRotateAnimationReverse:hover {
+.hover-rotate-animation-reverse:hover {
   transform: rotate(-360deg);
   transition: transform 0.9s ease-in-out; /* скорость поворота при наведении */
 }
 
 
 /* При наведении, увеличение/уменьшение, поворот, приподнимание/приопускание элемента */
-.hoverSmoothSelection-1 {
+.hover-smooth-selection-1 {
   transition: all 0.5s ease-in-out;
 }
-.hoverSmoothSelection-1:hover {
+.hover-smooth-selection-1:hover {
   transform: scale(1.05) rotate(10deg) translateY(-10px);
 }
 
 /* Вариант 2 */
-.hoverSmoothSelection-2 {
+.hover-smooth-selection-2 {
   transition: all 0.5s ease-in-out;
 }
-.hoverSmoothSelection-2:hover {
+.hover-smooth-selection-2:hover {
   transform: scale(0.95) rotate(10deg) translateY(10px);
 }
 
 /* Вариант 3 */
-.hoverSmoothSelection-3 {
+.hover-smooth-selection-3 {
   transition: all 0.5s ease-in-out;
 }
-.hoverSmoothSelection-3:hover {
+.hover-smooth-selection-3:hover {
   transform: scale(1.05) rotate(10deg) translateY(-10px);
 }
 
 /* Вариант 4 */
-.hoverSmoothSelection-4 {
+.hover-smooth-selection-4 {
   transition: all 0.5s ease-in-out;
 }
-.hoverSmoothSelection-4:hover {
+.hover-smooth-selection-4:hover {
   transform: scale(1.05) rotate(-10deg) translateY(-10px);
 }
 
 /* Вариант 5 */
-.hoverSmoothSelection-5 {
+.hover-smooth-selection-5 {
   transition: all 0.5s ease-in-out;
 }
-.hoverSmoothSelection-5:hover {
+.hover-smooth-selection-5:hover {
   transform: scale(0.95) rotate(-10deg) translateY(10px);
 }
 
 /* Вариант 6 */
-.hoverSmoothSelection-6 {
+.hover-smooth-selection-6 {
   transition: all 0.5s ease-in-out;
 }
-.hoverSmoothSelection-6:hover {
+.hover-smooth-selection-6:hover {
   transform: scale(1.05) rotate(-10deg) translateY(-10px);
 }
 
 
 /* Блюр элемента при наведении */
-.hoverBlur-1:hover {
+.hover-blur-1:hover {
     filter: blur(1px);
 }
 
-.hoverBlur-2:hover {
+.hover-blur-2:hover {
     filter: blur(2px);
 }
 
-.hoverBlur-3:hover {
+.hover-blur-3:hover {
     filter: blur(3px);
 }
 
-.hoverBlur-4:hover {
+.hover-blur-4:hover {
     filter: blur(4px);
 }
 
-.hoverBlur-5:hover {
+.hover-blur-5:hover {
     filter: blur(5px);
 }
 
-.hoverBlur-6:hover {
+.hover-blur-6:hover {
     filter: blur(6px);
 }
 
-.hoverBlur-7:hover {
+.hover-blur-7:hover {
     filter: blur(7px);
 }
 
-.hoverBlur-8:hover {
+.hover-blur-8:hover {
     filter: blur(8px);
 }
 
-.hoverBlur-9:hover {
+.hover-blur-9:hover {
     filter: blur(9px);
 }
 
-.hoverBlurlur-10:hover {
+.hover-blur-10:hover {
     filter: blur(10px);
 }
 
 /* Антиблюр элемента при наведении */
 /* 1 */
-.hoverAntiblur-1 {
+.hover-antiblur-1 {
     filter: blur(1px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-1:hover {
+.hover-antiblur-1:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 2 */
-.hoverAntiblur-2 {
+.hover-antiblur-2 {
     filter: blur(2px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-2:hover {
+.hover-antiblur-2:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 3 */
-.hoverAntiblur-3 {
+.hover-antiblur-3 {
     filter: blur(3px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-3:hover {
+.hover-antiblur-3:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 4 */
-.hoverAntiblur-4 {
+.hover-antiblur-4 {
     filter: blur(4px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-4:hover {
+.hover-antiblur-4:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 5 */
-.hoverAntiblur-5 {
+.hover-antiblur-5 {
     filter: blur(5px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-5:hover {
+.hover-antiblur-5:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 6 */
-.hoverAntiblur-6 {
+.hover-antiblur-6 {
     filter: blur(6px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-6:hover {
+.hover-antiblur-6:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 7 */
-.hoverAntiblur-7 {
+.hover-antiblur-7 {
     filter: blur(7px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-7:hover {
+.hover-antiblur-7:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 8 */
-.hoverAntiblur-8 {
+.hover-antiblur-8 {
     filter: blur(8px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-8:hover {
+.hover-antiblur-8:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 9 */
-.hoverAntiblur-9 {
+.hover-antiblur-9 {
     filter: blur(9px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-9:hover {
+.hover-antiblur-9:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 10 */
-.hoverAntiblur-10 {
+.hover-antiblur-10 {
     filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hoverAntiblur-10:hover {
+.hover-antiblur-10:hover {
     filter: blur(0);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 /* Эффект Glitch с помощью цвета */
-.hoverRGBGlitch {
+.hover-rgb-glitch {
     position: relative;
     transition: all 0.05s linear;
 }
 
-.hoverRGBGlitch:hover {
-    animation: rgbGlitch 0.16s infinite;
+.hover-rgb-glitch:hover {
+    animation: rgb-glitch 0.16s infinite;
     color: white;
 }
 
-@keyframes rgbGlitch {
+@keyframes rgb-glitch {
     0% {
         background: #00ff00;
         text-shadow: -3px 0 #ff0000, 3px 0 #00ffff;
@@ -290,17 +290,17 @@
 }
 
 /* Only text Glitch */
-.hoverTextGlitch {
+.hover-text-glitch {
     position: relative;
     transition: all 0.05s linear;
 }
 
-.hoverTextGlitch:hover {
-    animation: hoverTextGlitch 0.2s infinite;
+.hover-text-glitch:hover {
+    animation: hover-text-glitch 0.2s infinite;
     color: white;
 }
 
-@keyframes hoverTextGlitch {
+@keyframes hover-text-glitch {
     0% {
         text-shadow: -3px 0 #ff0000, 3px 0 #00ffff;
         transform: translate(0);

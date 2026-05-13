@@ -1,241 +1,227 @@
 /* Проявление/Скольжение элемента при загрузке страницы */
-.loadingFadeIn {
-    animation: loadingFadeIn 0.6s ease forwards; /* forwards сохраняет конечное состояние */
+.loading-fade-in {
+    animation: loading-fade-in 0.6s ease forwards; /* forwards сохраняет конечное состояние */
 }
-@keyframes loadingFadeIn {
+@keyframes loading-fade-in {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-.loadingFadeInUp {
-    animation: loadingFadeInUp 0.6s ease forwards; /* forwards сохраняет конечное состояние */
+.loading-fade-in-up {
+    animation: loading-fade-in-up 0.6s ease forwards; /* forwards сохраняет конечное состояние */
 }
-@keyframes loadingFadeInUp {
+@keyframes loading-fade-in-up {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.loadingFadeInDown {
-    animation: loadingFadeInDown 0.6s ease forwards; /* forwards сохраняет конечное состояние */
+.loading-fade-in-down {
+    animation: loading-fade-in-down 0.6s ease forwards; /* forwards сохраняет конечное состояние */
 }
-@keyframes loadingFadeInDown {
+@keyframes loading-fade-in-down {
   from { opacity: 0; transform: translateY(-20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.loadingFadeInLeft {
-    animation: loadingFadeInLeft 0.6s ease forwards; /* forwards сохраняет конечное состояние */
+.loading-fade-in-left {
+    animation: loading-fade-in-left 0.6s ease forwards; /* forwards сохраняет конечное состояние */
 }
-@keyframes loadingFadeInLeft {
+@keyframes loading-fade-in-left {
   from { opacity: 0; transform: translateX(20px); }
   to   { opacity: 1; transform: translateX(0); }
 }
 
-.loadingFadeInRight {
-    animation: loadingFadeInRight 0.6s ease forwards; /* forwards сохраняет конечное состояние */
+.loading-fade-in-right {
+    animation: loading-fade-in-right 0.6s ease forwards; /* forwards сохраняет конечное состояние */
 }
-@keyframes loadingFadeInRight {
+@keyframes loading-fade-in-right {
   from { opacity: 0; transform: translateX(-20px); }
   to   { opacity: 1; transform: translateX(0); }
 }
 
 
 /* Скольжение элемента при загрузке страницы */
-.loadingSlideUp {
-  animation: loadingSlideUp 0.6s ease forwards;
+.loading-slide-up {
+  animation: loading-slide-up 0.6s ease forwards;
 }
-@keyframes loadingZoomInUp {
+@keyframes loading-slide-up {
   from { transform: translateY(20px); }
   to   { transform: translateY(0); }
 }
 
-.loadingSlideDown {
-  animation: loadingSlideDown 0.6s ease forwards;
+.loading-slide-down {
+  animation: loading-slide-down 0.6s ease forwards;
 }
-@keyframes loadingSlideDown {
+@keyframes loading-slide-down {
   from { transform: translateY(-20px); }
   to   { transform: translateY(0); }
 }
 
-.loadingSlideLeft {
-  animation: loadingSlideLeft 0.6s ease forwards;
+.loading-slide-left {
+  animation: loading-slide-left 0.6s ease forwards;
 }
-@keyframes loadingSlideLeft {
+@keyframes loading-slide-left {
   from { transform: translateX(20px); }
   to   { transform: translateX(0); }
 }
 
-.loadingSlideRight {
-  animation: loadingSlideRight 0.6s ease forwards;
+.loading-slide-right {
+  animation: loading-slide-right 0.6s ease forwards;
 }
-@keyframes loadingSlideRight {
+@keyframes loading-slide-right {
   from { transform: translateX(-20px); }
   to   { transform: translateX(0); }
 }
 
 
 /* Проявление/Увеличение элемента при загрузке страницы */
-.loadingZoom {
-  animation: loadingZoom 0.6s ease forwards;
+.loading-zoom {
+  animation: loading-zoom 0.6s ease forwards;
 }
-@keyframes loadingZoom {
+@keyframes loading-zoom {
   from { opacity: 0; transform: scale(0.5); }
   to   { opacity: 1; transform: translateX(1); }
 }
 
-.loadingZoomInUp {
-  animation: loadingZoomInUp 0.6s ease forwards;
+.loading-zoom-up {
+  animation: loading-zoom-up 0.6s ease forwards;
 }
-@keyframes loadingZoomInUp {
+@keyframes loading-zoom-up {
   from { opacity: 0; transform: scale(0.5); transform: translateY(20px); }
   to   { opacity: 1; transform: translateX(1); transform: translateY(0); }
 }
 
-.loadingZoomInDown {
-  animation: loadingZoomInDown 0.6s ease forwards;
+.loading-zoom-down {
+  animation: loading-zoom-down 0.6s ease forwards;
 }
-@keyframes loadingZoomInDown {
+@keyframes loading-zoom-down {
   from { opacity: 0; transform: scale(0.5); transform: translateY(-20px); }
   to   { opacity: 1; transform: translateX(1); transform: translateY(0); }
 }
 
-.loadingZoomInLeft {
-  animation: loadingZoomInLeft 0.6s ease forwards;
+.loading-zoom-left {
+  animation: loading-zoom-left 0.6s ease forwards;
 }
-@keyframes loadingZoomInLeft {
+@keyframes loading-zoom-left {
   from { opacity: 0; transform: scale(0.5); transform: translateX(20px); }
   to   { opacity: 1; transform: translateX(1); transform: translateX(0); }
 }
 
-.loadingZoomInRight {
-  animation: loadingZoomInRight 0.6s ease forwards;
+.loading-zoom-right {
+  animation: loading-zoom-right 0.6s ease forwards;
 }
-@keyframes loadingZoomInRight {
+@keyframes loading-zoom-right {
   from { opacity: 0; transform: scale(0.5); transform: translateX(-20px); }
   to   { opacity: 1; transform: translateX(1); transform: translateX(0); }
 }
 
 
-/* Подсветка поля ввода */
-.input {
-  padding: 8px 12px;
-  border: 2px solid lightgray;
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-.input:focus {
-  border-color: dodgerblue;
-  box-shadow: 0 0 5px dodgerblue;
-}
-
-
 /* Выезд элемента при загрузке страницы */
-.loadingSlideScreenUp {
-  animation: loadingSlideScreenUp 0.6s ease forwards;
+.loading-slide-screen-up {
+  animation: loading-slide-screen-up 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenUp {
+@keyframes loading-slide-screen-up {
   from { transform: translateY(100%); }
   to   { transform: translateY(0); }
 }
 
-.loadingSlideScreenDown {
-  animation: loadingSlideScreenDown 0.6s ease forwards;
+.loading-slide-screen-down {
+  animation: loading-slide-screen-down 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenDown {
+@keyframes loading-slide-screen-down {
   from { transform: translateY(-100%); }
   to   { transform: translateY(0); }
 }
 
-.loadingSlideScreenLeft {
-  animation: loadingSlideScreenLeft 0.6s ease forwards;
+.loading-slide-screen-Left {
+  animation: loading-slide-screen-left 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenLeft {
+@keyframes loading-slide-screen-left {
   from { transform: translateX(100%); }
   to   { transform: translateX(0); }
 }
 
-.loadingSlideScreenRight {
-  animation: loadingSlideScreenRight 0.6s ease forwards;
+.loading-slide-screen-right {
+  animation: loading-slide-screen-right 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenRight {
+@keyframes loading-slide-screen-right {
   from { transform: translateX(-100%); }
   to   { transform: translateX(0); }
 }
 
 /* То же самое по диагонали */
-.loadingSlideScreenUpLeft {
-  animation: loadingSlideScreenUpLeft 0.6s ease forwards;
+.loading-slide-screen-up-left {
+  animation: loading-slide-screen-up-left 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenUpLeft {
+@keyframes loading-slide-screen-up-left {
   from { transform: translate(100%, -100%); }
   to   { transform: translate(0, 0); }
 }
 
-.loadingSlideScreenUpRight {
-  animation: loadingSlideScreenUpRight 0.6s ease forwards;
+.loading-slide-screen-up-right {
+  animation: loading-slide-screen-up-right 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenUpRight {
+@keyframes loading-slide-screen-up-right {
   from { transform: translate(-100%, 100%); }
   to   { transform: translate(0, 0); }
 }
 
-.loadingSlideScreenDownLeft {
-  animation: loadingSlideScreenDownLeft 0.6s ease forwards;
+.loading-slide-screen-down-left {
+  animation: loading-slide-screen-down-left 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenDownLeft {
+@keyframes loading-slide-screen-down-left {
   from { transform: translate(-100%, 100%); }
   to   { transform: translate(0, 0); }
 }
 
-.loadingSlideScreenDownRight {
-  animation: loadingSlideScreenDownRight 0.6s ease forwards;
+.loading-slide-screen-down-right {
+  animation: loading-slide-screen-down-right 0.6s ease forwards;
 }
-@keyframes loadingSlideScreenDownRight {
+@keyframes loading-slide-screen-down-right {
   from { transform: translate(100%, 100%); }
   to   { transform: translate(0, 0); }
 }
 
 /* Увеличение элемента из ничего в полный размер при загрузке страницы */
 /* Комментарий от автора: "Хорошо применять к body, выглядит более современно" */
-.loadingScaleIn {
-  animation: loadingScaleIn 0.6s ease forwards;
+.loading-scale-in {
+  animation: loading-scale-in 0.6s ease forwards;
 }
-@keyframes loadingScaleIn {
+@keyframes loading-scale-in {
   from { transform: scale(0); }
   to   { transform: scale(1); }
 }
 
 
 /* 360° вправо/влево + увеличение 0-100% при загрузке страницы */
-.loading360Right {
-  animation: loading360Right 0.6s ease forwards;
+.loading-360-right {
+  animation: loading-360-right 0.6s ease forwards;
 }
-@keyframes loading360Right {
+@keyframes loading-360-right {
   from { transform: rotate(-360deg); }
   to   { transform: rotate(0deg); }
 }
 
-.loading360Left {
-  animation: loading360Left 1s ease forwards;
+.loading-360-left {
+  animation: loading-360-left 1s ease forwards;
 }
-@keyframes loading360Left {
+@keyframes loading-360-left {
   from { transform: rotate(360deg); }
   to   { transform: rotate(0deg); }
 }
 
-.loadingScale360Right {
-  animation: loadingScale360Right 1s ease forwards;
+.loading-scale-360-right {
+  animation: loading-scale-360-right 1s ease forwards;
 }
-@keyframes loadingScale360Right {
+@keyframes loading-scale-360-right {
 from { transform: scale(0) rotate(0deg); }
 to   { transform: scale(1) rotate(360deg); }
 }
 
-.loadingScale360Left {
-  animation: loadingScale360Left 1s ease forwards;
+.loading-scale-360-left {
+  animation: loading-scale-360-left 1s ease forwards;
 }
-@keyframes loadingScale360Left {
+@keyframes loading-scale-360-left {
 from { transform: scale(0) rotate(0deg); }
 to   { transform: scale(1) rotate(360deg); }
 }
